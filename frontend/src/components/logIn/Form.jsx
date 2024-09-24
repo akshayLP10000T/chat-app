@@ -21,7 +21,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8080/api/v1/user/login', formData, {
+      const res = await axios.post('https://chat-app-a2qg.onrender.com/api/v1/user/login', formData, {
         headers: {
           'Content-Type': 'application/json'
         },

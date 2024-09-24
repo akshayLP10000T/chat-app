@@ -17,7 +17,7 @@ const Home = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.get('http://localhost:8080/api/v1/user/logout')
+      const res = await axios.get('https://chat-app-a2qg.onrender.com/api/v1/user/logout')
 
       if(res.data.success){
         dispatch(setSelectedUser(null));
